@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Coding Challenge
 
-## Getting Started
+thanks for taking the time to work on our coding challenge. the goal of this challenge is to asses your overall ability to build a feature. feel free to be creative.
 
-First, run the development server:
+## about
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+the logistics managers of one of our clients want to be able to view the status of their trucks on a simple dashboard like screen. The data is provided by a webservice from the logistics company. (we are aworking on actual logistics related project with a client, hence the topic for this exercise).
+
+### what you should build
+
+- create a page which displays a list of all trucks currently in the system
+- display the count of trucks total, status onroute and status idle as KPIs
+
+### how to get the data from the webservice
+
+`GET https://node-challenge.functn.workers.dev/`
+
+e.g the api supports CORS so you can fetch directly from the browser
+
+the webservice will return a simple array of trucks
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Truck 1",
+    "position": [47.751394768797404, 16.14841275234999],
+    "positionLabel": "Wien",
+    "status": "onroute"
+  }
+]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### nice to haves
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- add a filter or search
+- make a card / grid like layout
+- should work on mobile
+- make it look nice, but keep it simple
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+## FAQs
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### what if I get stuck?
 
-## Learn More
+Feel free to ask for help at any time during the excerise. We work as a team, there is always someone available to help.
 
-To learn more about Next.js, take a look at the following resources:
+### do I need to use technology XYZ?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You may use any technology you are most comfortable with, the result should run a browser though
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### what if I don't get all the nice to haves
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+don't worry these are nice to haves, the more the better but the most important goal is to have the information visible in the browser
