@@ -2,6 +2,27 @@
 
 thanks for taking the time to work on our coding challenge. the goal of this challenge is to asses your overall ability to build a feature. feel free to be creative.
 
+## notes from christian
+live link: https://functn-coding-challenge.vercel.app/
+
+tech used:
+- next.js 13 w/ app dir
+- typescript
+- tailwind
+- swr
+- leaflet
+- zod
+- framer motion
+
+what is implemented:
+- display all trucks in grid
+- refetch data on interval & window focus via SWR
+- search by name & location
+- filter by status & location
+- map view
+- clicking on marker focuses card and vice versa
+- responsive layout
+
 ## about
 
 the logistics managers of one of our clients want to be able to view the status of their trucks on a simple dashboard like screen. The data is provided by a webservice from the logistics company. (we are aworking on actual logistics related project with a client, hence the topic for this exercise).
