@@ -58,6 +58,26 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-10">
+      <div
+        aria-label="KPIs"
+        className="mx-auto md:w-1/2 grid grid-cols-3 gap-3"
+      >
+        <div className="rounded-md shadow-md border border-stone-100 shadow-stone-200 font-semibold p-3 text-center">
+          Total: <br /> {trucks?.length ?? "xx"}
+        </div>
+
+        <div className="rounded-md shadow-md border border-stone-100 shadow-stone-200 font-semibold p-3 text-center">
+          Idle:
+          <br />
+          {trucks?.filter((truck) => truck.status === "idle").length ?? "xx"}
+        </div>
+        <div className="rounded-md shadow-md border border-stone-100 shadow-stone-200 font-semibold p-3 text-center">
+          Onroute:
+          <br />
+          {trucks?.filter((truck) => truck.status === "onroute")?.length ??
+            "xx"}
+        </div>
+      </div>
       <header
         className="flex flex-col gap-5 justify-between md:flex-row items-center"
         aria-label="Search and Filters"
