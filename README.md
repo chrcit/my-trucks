@@ -1,7 +1,7 @@
 # MyTrucks
 ![Demo gif](public/demo.gif)
 
-live link: https://functn-coding-challenge.vercel.app/
+live link: [https://functn-coding-challenge.vercel.app/](https://my-trucks.vercel.app/)
 
 ## Stack
 - next.js 13 w/ app dir
